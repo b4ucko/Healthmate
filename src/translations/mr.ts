@@ -1,0 +1,71 @@
+
+export const mrIN = {
+  common: {
+    home: "मुख्यपृष्ठ",
+    doctors: "डॉक्टर्स",
+    emergency: "आपत्कालीन",
+    pharmacy: "फार्मसी",
+    bloodBank: "रक्त पेढी",
+    bloodDonation: "रक्तदान",
+    pregnancyCare: "गर्भावस्था देखभाल",
+    specializedServices: "विशेष सेवा",
+    findDoctor: "डॉक्टर शोधा",
+    signin: "साइन इन",
+    signup: "नोंदणी करा",
+    logout: "बाहेर पडा",
+    profile: "प्रोफाइल",
+    language: "भाषा",
+    about: "आमच्याबद्दल",
+    contact: "संपर्क",
+    help: "मदत"
+  },
+  home: {
+    title: "HealthMate - आपल्या आरोग्याची उत्तम काळजी घ्या",
+    subtitle: "तज्ञ डॉक्टरांकडून आरोग्य सेवा मिळवा",
+    findDoctor: "डॉक्टर शोधा",
+    emergency: "आपत्कालीन",
+    bookAppointment: "अपॉइंटमेंट बुक करा",
+    features: "आमच्या वैशिष्ट्यांचा अनुभव घ्या",
+    voiceAssistant: "आवाज सहाय्यक",
+    bloodBank: "रक्त पेढी",
+    pregnancyCare: "गर्भावस्था देखभाल"
+  },
+  pharmacy: {
+    title: "फार्मसी",
+    searchMedication: "औषधे शोधा",
+    selectCategory: "श्रेणी निवडा",
+    addToCart: "कार्टमध्ये जोडा",
+    checkout: "चेकआउट",
+    cartEmpty: "आपले कार्ट रिकामे आहे",
+    businessLogin: "व्यापार साइन इन", 
+    wholesaleRegister: "होलसेल व्यापारी म्हणून नोंदणी करा",
+  },
+  footer: {
+    companyName: "HealthMate",
+    copyright: "कॉपीराइट © 2025. सर्व हक्क राखीव.",
+    terms: "नियम आणि अटी",
+    privacy: "गोपनीयता धोरण",
+    followUs: "आम्हाला फॉलो करा",
+    careers: "करिअर",
+    blogs: "ब्लॉग्स",
+    press: "प्रेस",
+    accessibility: "अ‍ॅक्सेसिबिलिटी"
+  },
+  auth: {
+    email: "ईमेल",
+    password: "पासवर्ड",
+    signin: "साइन इन",
+    signup: "नोंदणी करा",
+    forgotPassword: "पासवर्ड विसरलात?",
+    noAccount: "खाते नाही?",
+    haveAccount: "आधीपासून खाते आहे?",
+    signupPatient: "रुग्ण म्हणून नोंदणी करा",
+    signupDoctor: "डॉक्टर म्हणून नोंदणी करा",
+    signupWholesaler: "होलसेल व्यापारी म्हणून नोंदणी करा",
+    fullName: "पूर्ण नाव",
+    confirmPassword: "पासवर्ड निश्चित करा",
+    welcomeBack: "पुन्हा स्वागत आहे",
+    createAccount: "खाते तयार करा",
+    businessSignIn: "व्यापार साइन इन"
+  }
+};

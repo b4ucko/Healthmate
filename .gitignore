@@ -1,0 +1,66 @@
+# Production Build Output
+dist/
+dist-ssr/
+build/
+
+# Dependencies
+node_modules/
+jspm_packages/
+.pnpm-store/
+.yarn/
+.npm/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment Variables & Private Credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.local
+
+# Diagnostic & Coverage reports
+coverage/
+.nyc_output/
+.eslintcache
+.stylelintcache
+htmlreport/
+
+# IDEs and Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+*.tsbuildinfo
+
+# OS Metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Cypress and testing logs
+cypress/screenshots/
+cypress/videos/
+.parcel-cache/
+.cache/
