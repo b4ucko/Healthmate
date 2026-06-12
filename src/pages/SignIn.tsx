@@ -86,7 +86,7 @@ const SignIn = () => {
             <p className="text-muted-foreground">Enter your credentials to access your account</p>
           </div>
           
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-border">
+          <div className="bg-card text-card-foreground p-8 rounded-xl shadow-md border border-border">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
 
