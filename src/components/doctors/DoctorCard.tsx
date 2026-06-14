@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Star, Clock, Phone, MessageSquare, Calendar, XCircle, Mail } from "lucide-react";
+import { MapPin, Clock, Phone, MessageSquare, Calendar, XCircle, Mail, GraduationCap, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -188,10 +188,11 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
                   <h3 className="text-xl font-bold">{doctor.name}</h3>
                   <p className="text-muted-foreground">{doctor.specialtyLabel || doctor.specialty}</p>
                 </div>
-                <div className="flex items-center mt-2 md:mt-0">
-                  <Star className="h-4 w-4 text-yellow-500 mr-1" />
-                  <span className="font-medium mr-1">{doctor.rating}</span>
-                  <span className="text-muted-foreground">({doctor.reviewCount} reviews)</span>
+                <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 gap-1">
+                  <div className="flex items-center gap-1.5 bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full text-xs font-semibold border border-blue-100">
+                    <GraduationCap className="h-3.5 w-3.5" />
+                    <span>{doctor.education?.split(" - ")[0] || "Medical Graduate"}</span>
+                  </div>
                 </div>
               </div>
               
@@ -204,6 +205,19 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
                   <MapPin className="h-4 w-4 text-red-500 mr-2" />
                   <span className="text-sm truncate">{doctor.location}</span>
                 </div>
+              </div>
+
+              <div className="mb-3 text-sm text-muted-foreground bg-gray-50/50 p-2.5 rounded-lg border border-gray-100/50 space-y-1.5 animate-fade-in">
+                <div className="flex items-center gap-2">
+                  <GraduationCap className="h-4 w-4 text-blue-600 shrink-0" />
+                  <span className="font-medium text-foreground">{doctor.education}</span>
+                </div>
+                {doctor.achievements && doctor.achievements.length > 0 && (
+                  <div className="flex items-start gap-2">
+                    <Award className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />
+                    <span>{doctor.achievements[0]}</span>
+                  </div>
+                )}
               </div>
               
               <div className="mb-3">

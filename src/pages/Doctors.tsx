@@ -499,12 +499,8 @@ const Doctors = () => {
   const sortedDoctors = [...filteredDoctors].sort((a, b) => {
     if (sortBy === 'relevance' && searchQuery !== '') {
       return b.relevance - a.relevance;
-    } else if (sortBy === 'rating') {
-      return b.rating - a.rating;
     } else if (sortBy === 'experience') {
       return b.experience - a.experience;
-    } else if (sortBy === 'reviews') {
-      return b.reviewCount - a.reviewCount;
     } else if (sortBy === 'location' && userLocation) {
       const aHasLocation = a.location.includes(userLocation);
       const bHasLocation = b.location.includes(userLocation);
@@ -600,9 +596,7 @@ const Doctors = () => {
                   onChange={(e) => setSortBy(e.target.value)}
                 >
                   <option value="relevance">Relevance</option>
-                  <option value="rating">Highest Rating</option>
                   <option value="experience">Most Experience</option>
-                  <option value="reviews">Most Reviews</option>
                   <option value="location">Nearest Location</option>
                 </select>
               </div>
