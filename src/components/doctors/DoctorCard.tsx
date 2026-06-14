@@ -188,8 +188,8 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
                   <h3 className="text-xl font-bold">{doctor.name}</h3>
                   <p className="text-muted-foreground">{doctor.specialtyLabel || doctor.specialty}</p>
                 </div>
-                <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 gap-1">
-                  <div className="flex items-center gap-1.5 bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full text-xs font-semibold border border-blue-100">
+                 <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 gap-1">
+                  <div className="flex items-center gap-1.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2.5 py-0.5 rounded-full text-xs font-semibold border border-blue-500/20">
                     <GraduationCap className="h-3.5 w-3.5" />
                     <span>{doctor.education?.split(" - ")[0] || "Medical Graduate"}</span>
                   </div>
@@ -207,14 +207,14 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
                 </div>
               </div>
 
-              <div className="mb-3 text-sm text-muted-foreground bg-gray-50/50 p-2.5 rounded-lg border border-gray-100/50 space-y-1.5 animate-fade-in">
+              <div className="mb-3 text-sm bg-muted/40 p-2.5 rounded-lg border border-border/50 space-y-2 animate-fade-in">
                 <div className="flex items-center gap-2">
-                  <GraduationCap className="h-4 w-4 text-blue-600 shrink-0" />
-                  <span className="font-medium text-foreground">{doctor.education}</span>
+                  <GraduationCap className="h-4 w-4 text-blue-500 dark:text-blue-400 shrink-0" />
+                  <span className="font-semibold text-foreground">{doctor.education}</span>
                 </div>
                 {doctor.achievements && doctor.achievements.length > 0 && (
-                  <div className="flex items-start gap-2">
-                    <Award className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-2 text-foreground/90 dark:text-foreground/80">
+                    <Award className="h-4 w-4 text-amber-500 dark:text-amber-400 shrink-0 mt-0.5" />
                     <span>{doctor.achievements[0]}</span>
                   </div>
                 )}
